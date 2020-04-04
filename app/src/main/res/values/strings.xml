@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Semana03Ejercicio01</string>
+    <string name="primer_boton">Grabar</string>
+    <string name="boton_siguiente">Siguiente</string>
+    <string name="boton_anterior">Anterior</string>
+
+    <string name="txtNombre">Nombre</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="txtPassword">Password</string>
+    <string name="btnEnviar">Enviar</string>
+
+
+    <string name="txtTitulo">Encuenta</string>
+    <string name="txtPregunta">¿Cuales son sus aficiones?</string>
+    <string name="chkTeatro">Ir a teatro</string>
+    <string name="chkCine">Ir a cine</string>
+    <string name="chkCenar">Ir a cenar</string>
+    <string name="btnEnviarEncuesta">Enviar encuesta</string>
+
+    <string name="rbtMasculino">Masculino</string>
+    <string name="rbtFemenino">Femenino</string>
+
+    <string name="txtEntradas">Nro. de entradas</string>
+
+
+</resources>

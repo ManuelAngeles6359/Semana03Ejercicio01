@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaActividad">
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginLeft="304dp"
+        android:onClick="eventoAnterior"
+        android:text="@string/boton_anterior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/txtNombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnterior" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/txtPassword"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/txtCorreo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="12dp"
+        android:onClick="eventoEnviar"
+        android:text="@string/btnEnviar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:text="@string/txtTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviar" />
+
+    <TextView
+        android:id="@+id/txtPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtPregunta"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <CheckBox
+        android:id="@+id/chkTeatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/chkTeatro"
+        app:layout_constraintTop_toBottomOf="@+id/txtPregunta"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <CheckBox
+        android:id="@+id/chkCine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/chkCine"
+        app:layout_constraintTop_toBottomOf="@+id/chkTeatro"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <CheckBox
+        android:id="@+id/chkCenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/chkCenar"
+        app:layout_constraintTop_toBottomOf="@+id/chkCine"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/btnEnviarEncuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="72dp"
+        android:onClick="EnviarEncuesta"
+        android:text="@string/btnEnviarEncuesta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPregunta" />
+
+    <RadioGroup
+        android:layout_width="406dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarEncuesta"
+        tools:layout_editor_absoluteX="5dp">
+
+        <RadioButton
+            android:id="@+id/rbtMasculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtMasculino" />
+
+        <RadioButton
+            android:id="@+id/rbtFemenino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtFemenino" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/sbEntradas"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="571dp" />
+
+    <TextView
+        android:id="@+id/lblEntradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtEntradas"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="602dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
